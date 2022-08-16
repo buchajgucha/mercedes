@@ -14,6 +14,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+
+burger.addEventListener("click", function () {
+  menu.classList.toggle("menu--active");
+});
+console.log(menu);
+
 const videoLink = document.querySelector(".video__link");
 const videoPlay = document.querySelector(".video__play");
 const videoImg = document.querySelector(".video__img");

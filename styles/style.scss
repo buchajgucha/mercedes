@@ -90,6 +90,26 @@ body {
   height: 100px;
 }
 
+.menu {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  font-size: 20px;
+  background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
+  transform: translateY(-200%);
+  transition: all 0.5s;
+}
+
+.menu--active {
+  display: block;
+  transform: translateY(0%);
+}
+
+.menu__item {
+  padding: 20px;
+  cursor: pointer;
+}
+
 .logo__link {
   margin: 0 auto;
 }
@@ -128,6 +148,10 @@ body {
   justify-content: flex-end;
   text-align: center;
   position: relative;
+}
+
+.burger {
+  cursor: pointer;
 }
 
 .merc {
@@ -403,4 +427,104 @@ body {
 
 .footer__bottom-bg {
   background-color: #070a1b;
+}
+
+@media (max-width: 1220px) {
+  .interior__inner {
+    display: block;
+  }
+  .interior__content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .interior__title {
+    margin-bottom: 20px;
+  }
+  .interior__image-img {
+    margin: 0 auto 60px;
+  }
+  .interior__image-bottom {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer__bottom {
+    flex-wrap: wrap;
+  }
+  .footer__link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .interior__image-bottom {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .interior__bottom-text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .header__top {
+    flex-wrap: wrap;
+  }
+  .footer__items {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__social {
+    margin-top: 20px;
+  }
+  .footer__bottom {
+    padding: 70px 0;
+  }
+  .interior {
+    margin-bottom: 100px;
+  }
+  .footer__item p {
+    max-width: 100%;
+  }
+  .concept {
+    text-align: center;
+  }
+  .header__social,
+  .footer__social {
+    width: 100%;
+    justify-content: center;
+  }
+  .menu {
+    width: 100%;
+    left: 0px;
+    text-align: center;
+  }
+  .concept__text {
+    font-size: 19px;
+  }
+  .premier__inner {
+    display: block;
+    text-align: center;
+  }
+  .premier__link {
+    margin: 20px 0;
+  }
+  .premier__img-left {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .burger {
+    width: 100%;
+  }
+  .burger__img {
+    margin: 0 auto;
+  }
 }
